@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+
+:root {
+  --red: #f94f4f;
+  --BG_black: #191921;
+  --white: #ffffff;
+  --black: #000000;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  line-height: 1.5;
+}
+nav {
+  position: relative;
+  height: 8rem;
+  padding: 2rem;
+}
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.icon_burger,
+.icon_cross {
+  position: absolute;
+  top: 2.5rem;
+  right: 2rem;
+  transition: all 0.3s ease;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8rem;
+  right: 4rem;
+  list-style-type: none;
+  width: 50%;
+  border-radius: 2px;
+  background-color: var(--BG_black);
+  padding: 0;
+  transform: translateX(9rem);
+  transition: all 0.3s ease-in-out;
+}
+
+ul .btn {
+  width: 80%;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  display: block;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: var(--white);
+  text-decoration: none;
+  margin: 1rem auto;
+}
+
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+p,
+small,
+button:not(nav button) {
+  margin: 0 2.4rem;
+}
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+p {
+  font-family: inherit;
+  font-size: 1.7rem;
+}
+
+main p {
+  margin-bottom: 3rem;
+}
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 800;
+  width: 17.7rem;
+  height: 7.2rem;
+  background-color: var(--red);
+  color: var(--white);
+  outline: none;
+  border: none;
+}
+
+main .btn {
+  margin-bottom: 10rem;
+}
+
+.design {
+  background-color: var(--BG_black);
+  color: var(--white);
+  padding-bottom: 7rem;
+  position: relative;
+}
+
+.img-wavy-red {
+  width: 6rem;
+  position: absolute;
+  top: 18.5rem;
+  left: 2rem;
+}
+
+.design span {
+  color: var(--red);
+}
+
+.design h2 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.design p {
+  margin-bottom: 2rem;
+}
+
+.design a {
+  display: inline;
+  font-weight: 800;
+  padding: 0 0 0.5rem 0;
+  margin: 0 2.4rem 4rem 2.4rem;
+  color: var(--red);
+  border-bottom: 1px solid var(--red);
+}
+
+.brand {
+  background-color: var(--red);
+  color: white;
+  padding: 8rem 0;
+}
+.brand-section {
+  position: relative;
+}
+
+.brand-number {
+  font-size: 6rem;
+  font-weight: 800;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 6rem;
+}
+
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.brand-par {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
+
+.slides {
+  background-color: var(--BG_black);
+  color: var(--white);
+  padding-bottom: 8rem;
+  position: relative;
+}
+
+.slides h2 {
+  margin: 5rem 2rem 2rem 2.6rem;
+}
+
+.slides i {
+  cursor: pointer;
+}
+
+.slides i img:hover {
+  transform: scale(1.04);
+  opacity: 0.8;
+}
+
+.slides i:first-of-type {
+  margin-left: 2.6rem;
+}
+
+.slides i:nth-of-type(2) {
+  margin-left: 1rem;
+}
+
+.hide-slide {
+  display: none;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  right: 3rem;
+  bottom: 16rem;
+}
+
+figcaption p {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+figcaption .small {
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+footer {
+  padding: 8rem 0;
+}
+
+footer h2 {
+  margin-bottom: 5rem;
+}

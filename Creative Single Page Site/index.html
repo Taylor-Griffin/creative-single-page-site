@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Creative single page site</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../img/desktop/logo.svg" alt="" />
+        <img
+          src="../img/mobile/icon-cross.svg"
+          alt=""
+          class="icon_cross hide"
+        />
+        <img
+          src="../img/mobile/icon-hamburger.svg"
+          alt=""
+          class="icon_burger"
+        />
+        <ul class="nav-menu hide">
+          <li><a href="#about">About</a></li>
+          <li><a href="service">Service</a></li>
+          <li><a href="projects">Projects</a></li>
+          <button class="btn">Schedule a Call</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="../img/mobile/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/desktop/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../img/tablet/image-hero.jpg"
+          />
+          <img
+            src="../img/mobile/image-hero.jpg"
+            alt="two men looking at computers"
+          />
+        </picture>
+
+        <h1>Branding & website design agency</h1>
+        <p>
+          We specialize in visual storytelling by creating cohesive brand and
+          website design solutions for small businesses, giving lasting
+          impressions to audiences in a digital world.
+        </p>
+        <button class="btn">Learn More</button>
+      </section>
+    </main>
+    <section class="design">
+      <picture>
+        <source
+          media="(max-width: 400px)"
+          srcset="../img/mobile/image-strategic.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="../img/desktop/image-strategic.jpg"
+        />
+        <source
+          media="(min-width: 400px)"
+          srcset="../img/tablet/image-strategic.jpg"
+        />
+        <img
+          src="../img/mobile/image-strategic.jpg"
+          alt="two men looking at computers"
+        />
+      </picture>
+      <img
+        src="../img/desktop/bg-pattern-wave-red.svg"
+        alt=""
+        class="img-wavy-red"
+      />
+      <h2><span>Design</span> is strategic.</h2>
+      <p>
+        "A well-crafted design strategy consistently produces desired outcomes
+        and brand awareness. We are firm believers that success lies in creative
+        collaboration with our clients."
+      </p>
+      <a href="#">Schedule a Call</a>
+    </section>
+    <section class="brand">
+      <h2>Our approach for creating a winning brand</h2>
+      <div class="brand-section">
+        <p class="brand-number">01</p>
+        <p class="brand-text">Brand strategy</p>
+        <p class="brand-par">
+          Brand strategy is critical for long-term success. Outshining
+          competitors and capturing the target audience are key.
+        </p>
+      </div>
+
+      <div class="brand-section">
+        <p class="brand-number">02</p>
+        <p class="brand-text">Brand design</p>
+        <p class="brand-par">
+          Keeping the brand design unique and meaningful helps in communicating
+          the brand’s timeless value effectively.
+        </p>
+      </div>
+      <div class="brand-section">
+        <p class="brand-number">03</p>
+        <p class="brand-text">Web design</p>
+        <p class="brand-par">
+          A beautifully crafted website is the best tool for brand awareness,
+          and ultimately results in increased revenues.
+        </p>
+      </div>
+    </section>
+    <section class="slides">
+      <figure class="slide slide_1">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="../img/mobile/image-slide-1.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/desktop/image-slide-1.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../img/tablet/image-slide-1.jpg"
+          />
+          <img
+            src="../img/mobile/image-slide-1.jpg"
+            alt="two men looking at computers"
+          />
+        </picture>
+        <figcaption>
+          <p>Lean Product Roadmap</p>
+          <p class="small">2019 project</p>
+        </figcaption>
+        <h2>Brand naming & guidelines</h2>
+      </figure>
+      <figure class="slide slide_2 hide-slide">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="../img/mobile/image-slide-2.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/desktop/image-slide-2.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../img/tablet/image-slide-2.jpg"
+          />
+          <img
+            src="../img/mobile/image-slide-2.jpg"
+            alt="two men looking at computers"
+          />
+        </picture>
+        <figcaption>
+          <p>New Majestic Hotel</p>
+          <p class="small">2018 Project</p>
+        </figcaption>
+        <h2>Brand identity & merchandise</h2>
+      </figure>
+      <figure class="slide slide_3">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="../img/mobile/image-slide-3.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/desktop/image-slide-3.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="../img/tablet/image-slide-3.jpg"
+          />
+          <img
+            src="../img/mobile/image-slide-3.jpg"
+            alt="two men looking at computers"
+          />
+        </picture>
+        <figcaption>
+          <p>Crypto Dashboard</p>
+          <p class="small" small>2016 Project</p>
+        </figcaption>
+        <h2>Brand identity & web design</h2>
+      </figure>
+      <div class="arrow-icons">
+        <i
+          ><img
+            class="prevBtn"
+            src="../img/desktop/icon-arrow-previous.svg"
+            alt="previous"
+        /></i>
+        <i
+          ><img
+            class="nextBtn"
+            src="../img/desktop/icon-arrow-next.svg"
+            alt="previous"
+        /></i>
+      </div>
+    </section>
+
+    <footer>
+      <h2>Let's build something great together.</h2>
+      <button class="btn">Schedule a Call</button>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
