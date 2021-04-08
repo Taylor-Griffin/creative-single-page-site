@@ -17,7 +17,7 @@
   <body>
     <header>
       <nav>
-        <img src="../img/desktop/logo.svg" alt="" />
+        <img class="logo" src="../img/desktop/logo.svg" alt="" />
         <img
           src="../img/mobile/icon-cross.svg"
           alt=""
@@ -57,13 +57,15 @@
           />
         </picture>
 
-        <h1>Branding & website design agency</h1>
-        <p>
-          We specialize in visual storytelling by creating cohesive brand and
-          website design solutions for small businesses, giving lasting
-          impressions to audiences in a digital world.
-        </p>
-        <button class="btn">Learn More</button>
+        <div class="main-cta">
+          <h1>Branding & website design agency</h1>
+          <p>
+            We specialize in visual storytelling by creating cohesive brand and
+            website design solutions for small businesses, giving lasting
+            impressions to audiences in a digital world.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
       </section>
     </main>
     <section class="design">
@@ -73,7 +75,7 @@
           srcset="../img/mobile/image-strategic.jpg"
         />
         <source
-          media="(min-width: 768px)"
+          media="(min-width: 800px)"
           srcset="../img/desktop/image-strategic.jpg"
         />
         <source
@@ -90,40 +92,43 @@
         alt=""
         class="img-wavy-red"
       />
-      <h2><span>Design</span> is strategic.</h2>
-      <p>
-        "A well-crafted design strategy consistently produces desired outcomes
-        and brand awareness. We are firm believers that success lies in creative
-        collaboration with our clients."
-      </p>
-      <a href="#">Schedule a Call</a>
+      <div class="design-copy">
+        <h2><span>Design</span> is strategic.</h2>
+        <p>
+          "A well-crafted design strategy consistently produces desired outcomes
+          and brand awareness. We are firm believers that success lies in
+          creative collaboration with our clients."
+        </p>
+        <a href="#">Schedule a Call</a>
+      </div>
     </section>
     <section class="brand">
       <h2>Our approach for creating a winning brand</h2>
-      <div class="brand-section">
-        <p class="brand-number">01</p>
-        <p class="brand-text">Brand strategy</p>
-        <p class="brand-par">
-          Brand strategy is critical for long-term success. Outshining
-          competitors and capturing the target audience are key.
-        </p>
-      </div>
-
-      <div class="brand-section">
-        <p class="brand-number">02</p>
-        <p class="brand-text">Brand design</p>
-        <p class="brand-par">
-          Keeping the brand design unique and meaningful helps in communicating
-          the brand’s timeless value effectively.
-        </p>
-      </div>
-      <div class="brand-section">
-        <p class="brand-number">03</p>
-        <p class="brand-text">Web design</p>
-        <p class="brand-par">
-          A beautifully crafted website is the best tool for brand awareness,
-          and ultimately results in increased revenues.
-        </p>
+      <div class="brand-sections">
+        <div class="brand-section">
+          <p class="brand-number">01</p>
+          <p class="brand-text">Brand strategy</p>
+          <p class="brand-par">
+            Brand strategy is critical for long-term success. Outshining
+            competitors and capturing the target audience are key.
+          </p>
+        </div>
+        <div class="brand-section">
+          <p class="brand-number">02</p>
+          <p class="brand-text">Brand design</p>
+          <p class="brand-par">
+            Keeping the brand design unique and meaningful helps in
+            communicating the brand’s timeless value effectively.
+          </p>
+        </div>
+        <div class="brand-section">
+          <p class="brand-number">03</p>
+          <p class="brand-text">Web design</p>
+          <p class="brand-par">
+            A beautifully crafted website is the best tool for brand awareness,
+            and ultimately results in increased revenues.
+          </p>
+        </div>
       </div>
     </section>
     <section class="slides">
@@ -134,7 +139,7 @@
             srcset="../img/mobile/image-slide-1.jpg"
           />
           <source
-            media="(min-width: 768px)"
+            media="(min-width: 800px)"
             srcset="../img/desktop/image-slide-1.jpg"
           />
           <source
@@ -159,7 +164,7 @@
             srcset="../img/mobile/image-slide-2.jpg"
           />
           <source
-            media="(min-width: 768px)"
+            media="(min-width: 800px)"
             srcset="../img/desktop/image-slide-2.jpg"
           />
           <source
@@ -177,14 +182,14 @@
         </figcaption>
         <h2>Brand identity & merchandise</h2>
       </figure>
-      <figure class="slide slide_3">
+      <figure class="slide slide_3 hide-slide">
         <picture>
           <source
             media="(max-width: 600px)"
             srcset="../img/mobile/image-slide-3.jpg"
           />
           <source
-            media="(min-width: 768px)"
+            media="(min-width: 800px)"
             srcset="../img/desktop/image-slide-3.jpg"
           />
           <source

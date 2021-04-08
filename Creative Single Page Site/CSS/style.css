@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
 
+/* --Base Styles-- */
+
 :root {
   --red: #f94f4f;
   --BG_black: #191921;
@@ -18,6 +20,8 @@ body {
   font-family: "Commissioner", sans-serif;
   line-height: 1.5;
 }
+
+/* --Navbar-- */
 nav {
   position: relative;
   height: 8rem;
@@ -36,7 +40,7 @@ nav {
   position: absolute;
   top: 2.5rem;
   right: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 ul {
@@ -71,7 +75,35 @@ a {
   color: var(--white);
   text-decoration: none;
   margin: 1rem auto;
+  opacity: 0.7;
 }
+
+a:hover,
+a:focus {
+  opacity: 1;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 800;
+  width: 17.7rem;
+  height: 7.2rem;
+  background-color: var(--red);
+  color: var(--white);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.02);
+  background-color: teal;
+}
+
+/* --Main Section-- */
 
 img {
   max-width: 100%;
@@ -109,17 +141,6 @@ p {
 
 main p {
   margin-bottom: 3rem;
-}
-.btn {
-  font-family: inherit;
-  font-size: 1.6rem;
-  font-weight: 800;
-  width: 17.7rem;
-  height: 7.2rem;
-  background-color: var(--red);
-  color: var(--white);
-  outline: none;
-  border: none;
 }
 
 main .btn {
@@ -208,11 +229,6 @@ main .btn {
   cursor: pointer;
 }
 
-.slides i img:hover {
-  transform: scale(1.04);
-  opacity: 0.8;
-}
-
 .slides i:first-of-type {
   margin-left: 2.6rem;
 }
@@ -252,4 +268,302 @@ footer {
 
 footer h2 {
   margin-bottom: 5rem;
+}
+
+/* ---Tablet Styles--- */
+
+@media only screen and (min-width: 700px) {
+  /* --Base Style-- */
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  /* ---NavBar--- */
+  nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    height: 18rem;
+    padding: 4rem;
+  }
+
+  .logo {
+    margin-left: 3rem;
+    margin-top: 3.8rem;
+    align-self: flex-start;
+  }
+  .hide {
+    opacity: 1;
+  }
+
+  .icon_burger,
+  .icon_cross {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    height: 18rem;
+    min-width: 60%;
+    border-radius: 2px;
+    background-color: var(--red);
+    padding: 0;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul .btn {
+    height: 5rem;
+    width: 16rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: var(--BG_black);
+  }
+
+  a {
+    display: block;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--white);
+    text-decoration: none;
+    margin: 1rem auto;
+  }
+  a:first-of-type {
+    margin-left: 2rem;
+  }
+
+  /* --Main Section-- */
+
+  main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  main picture {
+    max-width: 100%;
+    transform: translateX(9rem);
+    overflow: hidden;
+  }
+
+  .main-cta {
+    position: absolute;
+    width: 70%;
+    top: 7rem;
+    margin-left: 3rem;
+  }
+
+  /* --Design Section-- */
+
+  .design {
+    display: flex;
+    height: 658px;
+  }
+  .design picture {
+    width: 50%;
+  }
+
+  .design-copy {
+    width: 50%;
+  }
+
+  .design h2 {
+    width: 15rem;
+    margin: 13rem 0 0 5rem;
+  }
+  .design p {
+    width: 30rem;
+    margin: 3rem 0 3rem 5rem;
+  }
+
+  .design a {
+    margin-left: 5rem;
+  }
+  .img-wavy-red {
+    width: 5rem;
+    top: 15rem;
+    left: 35rem;
+  }
+
+  /* --Brand Section--- */
+  .brand {
+    display: flex;
+    background-color: var(--white);
+    position: relative;
+  }
+
+  .brand h2 {
+    color: var(--black);
+    font-size: 3.5rem;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    width: 70%;
+  }
+  .brand-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8rem 1rem 12rem 2rem;
+    background-color: var(--red);
+    margin-top: -18rem;
+  }
+
+  .brand-text {
+    font-size: 1.8rem;
+  }
+
+  .brand-number {
+    font-size: 7rem;
+    bottom: 9.5rem;
+  }
+
+  /* --Slides Section-- */
+  .slides {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    margin-top: -10rem;
+    height: 33rem;
+    padding-right: 5rem;
+    position: relative;
+  }
+
+  .wavy-white::after {
+    content: url(/img/desktop/bg-pattern-wavy-white.svg);
+    position: absolute;
+    top: 10rem;
+    left: 30rem;
+    /* margin-left: 1rem; */
+    transform: scale(0.5) scaleX(-1);
+  }
+
+  .slide {
+    position: relative;
+    grid-column: 8/-1;
+  }
+
+  figure h2 {
+    position: absolute;
+    top: 5rem;
+    right: 45rem;
+    width: 25rem;
+  }
+
+  .arrow-icons {
+    display: flex;
+    height: 3rem;
+    grid-column: 1/4;
+    margin-left: 2rem;
+    margin-top: -23rem;
+  }
+  figure {
+    position: absolute;
+    right: -5rem;
+    top: 0;
+  }
+  figcaption {
+    bottom: 5rem;
+  }
+
+  footer {
+    margin: 14rem 2.6rem 0 2.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer h2 {
+    width: 40rem;
+  }
+}
+
+/* ---Desktop Styles--- */
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    font-size: 90%;
+  }
+
+  nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 20rem;
+  }
+
+  nav ul {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  main {
+    margin-top: -2rem;
+  }
+
+  .main-cta {
+    max-width: 50rem;
+  }
+
+  main picture {
+    margin-left: auto;
+  }
+
+  .main-cta {
+    margin-left: 10rem;
+  }
+  .logo {
+    margin-left: 10rem;
+    margin-top: 7rem;
+  }
+
+  .design {
+    height: 80rem;
+  }
+  .design-copy p {
+    width: 45rem;
+  }
+  .img-wavy-red {
+    left: 48rem;
+    width: 8rem;
+  }
+
+  .brand {
+    padding-top: 1rem;
+  }
+
+  .brand-section {
+    margin-left: 10rem;
+  }
+
+  .brand h2 {
+    position: relative;
+    width: 50%;
+    left: 15rem;
+    top: 5rem;
+    /* margin-left: 20rem; */
+  }
+
+  .brand-par {
+    margin-bottom: 3rem;
+    width: 40rem;
+  }
+  .brand-number {
+    margin-left: -3rem;
+  }
 }
