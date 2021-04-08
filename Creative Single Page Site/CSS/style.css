@@ -60,6 +60,10 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 
+ul li:first-of-type {
+  padding-top: 2rem;
+}
+
 ul .btn {
   width: 80%;
   height: 6rem;
@@ -103,8 +107,6 @@ a:focus {
   background-color: teal;
 }
 
-/* --Main Section-- */
-
 img {
   max-width: 100%;
 }
@@ -139,6 +141,8 @@ p {
   font-size: 1.7rem;
 }
 
+/* --Main Section-- */
+
 main p {
   margin-bottom: 3rem;
 }
@@ -146,6 +150,8 @@ main p {
 main .btn {
   margin-bottom: 10rem;
 }
+
+/* --Design section-- */
 
 .design {
   background-color: var(--BG_black);
@@ -183,6 +189,8 @@ main .btn {
   border-bottom: 1px solid var(--red);
 }
 
+/* --Brand section-- */
+
 .brand {
   background-color: var(--red);
   color: white;
@@ -213,6 +221,8 @@ main .btn {
   margin-top: 1.5rem;
   opacity: 0.8;
 }
+
+/* --Slide section-- */
 
 .slides {
   background-color: var(--BG_black);
@@ -261,6 +271,17 @@ figcaption .small {
   font-size: 1.2rem;
   text-align: right;
 }
+.arrow-icons {
+  display: flex;
+  margin-left: 12rem;
+  position: relative;
+  top: -8rem;
+}
+.arrow-icons img {
+  margin-right: 1rem;
+}
+
+/* --Footer-- */
 
 footer {
   padding: 8rem 0;
@@ -286,10 +307,13 @@ footer h2 {
   nav {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     position: relative;
     height: 18rem;
     padding: 4rem;
+  }
+
+  ul li:first-of-type {
+    padding-top: 0;
   }
 
   .logo {
@@ -451,7 +475,7 @@ footer h2 {
     position: absolute;
     top: 10rem;
     left: 30rem;
-    /* margin-left: 1rem; */
+
     transform: scale(0.5) scaleX(-1);
   }
 
@@ -468,11 +492,7 @@ footer h2 {
   }
 
   .arrow-icons {
-    display: flex;
-    height: 3rem;
-    grid-column: 1/4;
-    margin-left: 2rem;
-    margin-top: -23rem;
+    margin-left: 25rem;
   }
   figure {
     position: absolute;
@@ -482,6 +502,8 @@ footer h2 {
   figcaption {
     bottom: 5rem;
   }
+
+  /* --Footer-- */
 
   footer {
     margin: 14rem 2.6rem 0 2.6rem;
@@ -539,7 +561,7 @@ footer h2 {
     width: 45rem;
   }
   .img-wavy-red {
-    left: 48rem;
+    left: 40rem;
     width: 8rem;
   }
 
@@ -556,7 +578,6 @@ footer h2 {
     width: 50%;
     left: 15rem;
     top: 5rem;
-    /* margin-left: 20rem; */
   }
 
   .brand-par {
@@ -565,5 +586,10 @@ footer h2 {
   }
   .brand-number {
     margin-left: -3rem;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    flex: 1 1 3rem;
   }
 }
