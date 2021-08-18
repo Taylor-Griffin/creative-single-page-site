@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
 
 /* --Base Styles-- */
 
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Commissioner", sans-serif;
+  font-family: 'Commissioner', sans-serif;
   line-height: 1.5;
 }
 
@@ -546,11 +546,7 @@ footer h2 {
     margin-left: auto;
   }
 
-  .main-cta {
-    margin-left: 10rem;
-  }
   .logo {
-    margin-left: 10rem;
     margin-top: 7rem;
   }
 
